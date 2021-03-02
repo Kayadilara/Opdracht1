@@ -19,7 +19,7 @@ const Followers = ( { query } ) => {
         isLoading && (
           <Alert 
             alert = 'info'
-            message = 'Loading followers...'
+            message = 'Loading...'
           />
         )
       }

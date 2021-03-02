@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import './Opdracht1.css';
 import Button from './Components/Button';
 import Input from './Components/Input';
 import Detail from './Components/Detail';
 import Followers from './Components/Followers';
 
-const SearchBar = ( { onSearchClick, onResetClick }) => {
+const Search = ( { onSearchClick, onResetClick }) => {
   const [query, setQuery] = useState('');
   const handleChange = (data) => {
     setQuery(data.target.value);
@@ -47,7 +48,7 @@ const Index = () => {
 
   return (
     <>
-      <SearchBar onSearchClick={(query) => setActiveUser(query)} onResetClick={() => setActiveUser(null)}/>
+      <Search onSearchClick={(query) => setActiveUser(query)} onResetClick={() => setActiveUser(null)}/>
       {
         activeUser ? [
           <Detail query = { activeUser }/>,

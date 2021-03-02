@@ -19,7 +19,7 @@ const Detail = ( { query } ) => {
         isLoading && (
           <Alert 
             alert = 'info'
-            message = 'Loading user...'
+            message = 'Loading...'
           />
         )
       }

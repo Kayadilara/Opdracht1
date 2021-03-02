@@ -1,0 +1,15 @@
+body{
+    padding: 2rem;
+}
+
+label.form-label{
+    font-size: 30px;
+}
+
+.btn{
+    margin-right: 1rem;
+}
+
+.card{
+    margin: 2rem;
+}
